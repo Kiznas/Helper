@@ -117,7 +117,7 @@ namespace Helper
 
 
             //5. Calculate the sum of array elements with odd indices
-            public static int GetSumOddIndices(int[] array)
+            public static int GetSumOfOddNumbers(int[] array)
             {
                 if (array == null)
                 {
@@ -136,7 +136,7 @@ namespace Helper
 
 
             //6. Make an array reverse (an array in the opposite direction)
-            public static int[] GetReverse(int[] array)
+            public static int[] ReverseArray(int[] array)
             {
                 if (array == null)
                 {
@@ -157,7 +157,7 @@ namespace Helper
 
 
             //7. Count the number of odd array elements
-            public static int GetCountOddElements(int[] array)
+            public static int GetCountOfOddElements(int[] array)
             {
                 if (array == null)
                 {
@@ -179,7 +179,7 @@ namespace Helper
 
 
             //8. Swap the first and second half of the array, for example, for an array of 1 2 3 4, the result is 3 4 1 2, or for 1 2 3 4 5 -> 4 5 3 1 2.
-            public static int[] SwapArray(int[] array)
+            public static int[] SwapHalfArray(int[] array)
             {
                 if (array == null)
                 {

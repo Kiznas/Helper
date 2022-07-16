@@ -2,10 +2,10 @@
 
 namespace Helper
 {
-    public class CirclesHelper
+    public class CyclesHelper
     {
         //1. The user enters 2 numbers (A and B). Raise the number A to the power of B.
-        public static double Degree(double number, double degree)
+        public static double RaiseToThePower(double number, double degree)
         {
             double result = 1;
 
@@ -48,7 +48,7 @@ namespace Helper
 
 
         //4. The user enters 1 number (A). Print the largest divisor (other than A itself) of the number A.
-        public static int GetLagestDivisor(int a)
+        public static int GetLargestDivisor(int a)
         {
             int i;
 
@@ -60,10 +60,30 @@ namespace Helper
             return 0;
         }
 
+        //5. The user enters 2 numbers (A and B). Print the sum of all numbers from the range A to B that are divisible
+        //by 7 without a remainder. (Note that B may be less than A if you type).
+
+        public static int FindSummaryInRange(int a, int b)
+        {
+            int summary = 0;
+            for (int i = a; i > b; i--)
+            {
+                if (i % 7 == 0)
+                {
+                    summary += i;
+                }
+                else if (a < b)
+                {
+                    summary = 0;
+                }
+            }
+            return summary;
+        }
+
 
         //6. The user enters 1 number (N). Print the Nth number of the fibonacci series. In the fibonacci series, each next number is the sum of the previous two.
         //The first and second are considered equal to 1.
-        public static int GetNthNumberFibSeries(int a)
+        public static int FibonacciSeries(int a)
         {
             int first = 0;
             int second = 1;
@@ -80,7 +100,7 @@ namespace Helper
 
 
         //7. The user enters 2 numbers. Find their greatest common divisor using Euclid's algorithm.
-        public static int GetGDC(int a, int b)
+        public static int Euclid(int a, int b)
         {
             int min = Math.Min(a, b);
 
@@ -102,7 +122,7 @@ namespace Helper
 
 
         //9. The user enters number.Find the number of odd digits of this number.
-        public static int GetNumberOfOdd(int a)
+        public static int GetNumberOfOddDigits(int a)
         {
             int result = 0;
 
